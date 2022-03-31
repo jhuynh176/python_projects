@@ -106,4 +106,76 @@ green&white;,;09/15/17,   Gail Phelps   ;,;$30.52
 ;,;   $22.66   ;,; green&white&blue;,;09/15/17"""
 
 #------------------------------------------------
-# Start coding below!
+print("Original:\n", daily_sales, "\n")
+
+# Clean up artifact ';,;'
+daily_sales_replaced = daily_sales.replace(';,;', ';')
+print("First Clean Up:\n", daily_sales_replaced, "\n")
+
+# Split string sales into list of sales
+daily_transactions = daily_sales_replaced.split(',')
+print("Second Clean Up:\n", daily_transactions, "\n")
+
+# Split list of sales into list of sections
+daily_transactions_split = []
+for transaction in daily_transactions:
+  daily_transactions_split.append(transaction.split(';'))
+print("Third Clean Up:\n", daily_transactions_split, "\n")
+
+# Clean up artifact in sections
+transactions_clean = []
+for transaction in daily_transactions_split:
+  temp = []
+  for section in transaction:
+    section.strip()
+    temp.append(section.strip())
+  #print(temp)
+  transactions_clean.append(temp)
+print("Fourth Clean Up:\n", transactions_clean, "\n")
+
+print("Fifth Clean Up:\n")
+# Split sections into customers, sales, and thread type
+customers = []
+sales = []
+thread_sold = []
+for section in transactions_clean:
+  # print(section)
+  customers.append(section[0])
+  sales.append(section[1])
+  thread_sold.append(section[2])
+
+thread_sold_split = []
+for thread in thread_sold:
+  temp = thread.split('&')
+  for color in temp:
+    thread_sold_split.append(color)
+# print(thread_sold_split)
+
+print("Customers:\n", customers, "\n")
+print("Sales:\n", sales, "\n")
+print("Thread sold:\n", thread_sold_split, "\n")
+
+colors = ['red', 'yellow', 'green', 'white', 'black', 'blue', 'purple']
+def color_count(color):
+  return thread_sold_split.count(color)
+# print(color_count("white"))
+
+total_thread_sold = 0
+for color in colors:
+  count = color_count(color)
+  total_thread_sold += count
+  # print(color.title(), count)
+  string = "{color} thread, there are {count} sales today.".format(color = color.title(), count = count)
+  print(string)
+
+total_sales = 0
+for sale in sales:
+  total_sales += float(sale.strip('$'))
+  
+total_sales = round(total_sales, 2)
+print("\nTotal sales: $" + str(total_sales))
+print("\nTotal customers:", len(customers))
+print("\nTotal thread sold:", total_thread_sold)
+print("\nAverage cost per customer: $" + str(round(total_sales / len(customers), 2)))
+
+
