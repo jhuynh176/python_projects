@@ -1,4 +1,4 @@
-# Decode Message - Version I
+# Caesar's Cipher - Version I
 
 ## Introduction
 - This type of cipher is called Caesar Cipher. 

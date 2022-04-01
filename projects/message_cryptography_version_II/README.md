@@ -1,4 +1,4 @@
-# Decode Message - Version II
+# Caesar's Cipher - Version II
 
 ## Introduction
 - Caesar's Cipher was considered a very secure way of communication and it took a lot of effort to crack if you were unaware of the value of the shift?
