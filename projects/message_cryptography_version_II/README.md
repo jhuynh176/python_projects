@@ -49,8 +49,10 @@ Offset 3 :
 Offset 4 :
         --> Czdrzq'r Chogdq vzr bnmrhcdqdc z udqx rdbtqd vzx ne bnlltmhbzshnm zmc hs snnj z kns ne deenqs sn bqzbj he xnt vdqd tmzvzqd ne sgd uzktd ne sgd rghes?
 
-Offset 5 :
-        --> Caesar's Cipher was considered a very secure way of communication and it took a lot of effort to crack if you were unaware of the value of the shift?   <=== HERE IS THE ANSWER
+------------------------------------------
+Offset 5 :  <=== HERE IS THE ANSWER
+        --> Caesar's Cipher was considered a very secure way of communication and it took a lot of effort to crack if you were unaware of the value of the shift?   
+------------------------------------------
 
 Offset 6 :
         --> Cbftbs't Cjqifs xbt dpotjefsfe b wfsz tfdvsf xbz pg dpnnvojdbujpo boe ju uppl b mpu pg fggpsu up dsbdl jg zpv xfsf vobxbsf pg uif wbmvf pg uif tijgu?
