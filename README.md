@@ -7,6 +7,7 @@
 4. [Message Cryptography - Version II - Caesar's Cipher - Brute Force](https://github.com/jhuynh176/python_projects/tree/main/projects/message_cryptography_version_II)
 5. [Message Cryptography - Version III - Vigenère Cipher](https://github.com/jhuynh176/python_projects/tree/main/projects/message_cryptography_version_III_Vignerere_Cipher)
 6. [Event Party Planning - Automate Process](https://github.com/jhuynh176/python_projects/tree/main/projects/event_party_planning)
+7. [Hacking the Fenders](https://github.com/jhuynh176/python_projects/tree/main/projects/hacking_the_fender)
 
 ## Link to Games
 1. [Fortune Ball](https://github.com/jhuynh176/python_projects/blob/main/projects/fortune_ball/fortune_ball.py)
