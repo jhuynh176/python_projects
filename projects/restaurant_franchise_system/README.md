@@ -25,7 +25,7 @@
         - franchise = class
 
 ## Output
-### Menu Class
+Menu Class
 ```
 python .\script.py
 --> Creating Menu class
@@ -51,7 +51,7 @@ Your Early_bird purchased items:
         ['salumeria plate', 'mushroom ravioli (vegan)']
 Your total cost: $21.5
 ```
-### Franchise Class
+Franchise Class
 ```
 --> Creating Franchise class
 --> Adding franchises
@@ -65,7 +65,7 @@ These menu are available at 12 :
 These menu are available at 17 :
 ['Early_bird', 'Dinner', 'Kids']
 ```
-### Business Class
+Business Class
 ```
 --> Creating Business class
 --> Adding business
