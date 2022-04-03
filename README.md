@@ -9,6 +9,7 @@
 6. [Event Party Planning - Automate Process](https://github.com/jhuynh176/python_projects/tree/main/projects/event_party_planning)
 7. [Hacking the Fenders](https://github.com/jhuynh176/python_projects/tree/main/projects/hacking_the_fender)
 8. [Restaurant Franchise System](https://github.com/jhuynh176/python_projects/tree/main/projects/restaurant_franchise_system)
+9. [Robot Handling System](https://github.com/jhuynh176/python_projects/tree/main/projects/robot_handling_system)
 
 ## Link to Games
 1. [Fortune Ball](https://github.com/jhuynh176/python_projects/blob/main/projects/fortune_ball/fortune_ball.py)
