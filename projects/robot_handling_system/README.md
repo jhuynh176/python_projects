@@ -32,3 +32,28 @@
     - `global_run`
         - globally enable/disable all robots
 ## Output
+```
+>>> python .\script.py
+Creating robot # 1
+Creating robot # 2
+Creating robot # 3
+
+Robot 1:
+        Motor Speed: ..........15 ft/s
+        Direction: ............50 deg
+        Sensor Range: .........20 ft
+        Latitude, Longitude: ..(-999999, -999999)
+        Robot Engine Status: ..True
+Robot 2:
+        Motor Speed: ..........35 ft/s
+        Direction: ............75 deg
+        Sensor Range: .........25 ft
+        Latitude, Longitude: ..(-999999, -999999)
+        Robot Engine Status: ..True
+Robot 3:
+        Motor Speed: ..........20 ft/s
+        Direction: ............60 deg
+        Sensor Range: .........10 ft
+        Latitude, Longitude: ..(-999999, -999999)
+        Robot Engine Status: ..True
+```
