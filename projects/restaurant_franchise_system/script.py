@@ -1,3 +1,4 @@
+print("--> Create Class Menu")
 class Menu:
     def __init__(self, name, items, start_time, end_time):
         self.name = name
@@ -85,6 +86,7 @@ kids = Menu(
     21
 )
 
+print("--> Adding menu")
 print(brunch)
 print(early_bird)
 print(dinner)
@@ -92,3 +94,37 @@ print(kids)
 
 brunch.calculate_bill(['pancakes', 'home fries', 'coffee'])
 early_bird.calculate_bill(['salumeria plate', 'mushroom ravioli (vegan)'])
+
+class Franchise:
+    def __init__(self, name, address, menus):
+        self.name = name
+        self.address = address
+        self.menus = menus
+
+    def __repr__(self):
+        string = "Restaurant {name} is located at:\n\t {address}".format(
+          name = self.name,
+          address = self.address
+          )
+        return string
+
+    def available_menus(self, time):
+        print("\nThese menu are available at", time, ":")
+        available_menu = []
+        for menu in self.menus:
+            if time >= menu.start_time and time <= menu.end_time:
+              available_menu.append(menu.name)
+        if available_menu != []:
+          return available_menu
+        return print("There is no menu available at {time}.".format(time = time))
+
+
+
+flagship_store = Franchise("Flagship Store", "1232 West End Road", [brunch, early_bird, dinner, kids])
+new_installment = Franchise("New Installment", "12 East Mulbery Street", [brunch, early_bird, dinner, kids])
+
+print(flagship_store)
+print(new_installment)
+
+print(flagship_store.available_menus(12))
+print(flagship_store.available_menus(17))
