@@ -34,4 +34,38 @@
     - `test_shipping_cost`
     - `test_driver_cost`
     - `test_revenue_made`
+
 ## Output
+```
+OK! calculate_shipping_cost() passes tests
+OK! calculate_driver_cost() passes tests
+UEXODI
+DEFZXIE
+OK! calculate_money_made() passes tests
+```
+```
+SYSTEM: Calculating driver cost
+400.0
+-------------------------------------
+Found FIRST driver:
+        Driver:       Josh
+        Speed:        2
+        Salary:       10
+        Total Cost:   $400.0
+
+228.57
+-------------------------------------
+Found CHEAPER driver:
+        Driver:       Alex
+        Speed:        7
+        Salary:       20
+        Total Cost:   $228.57
+
+222.22
+-------------------------------------
+Found CHEAPER driver:
+        Driver:       Hector
+        Speed:        9
+        Salary:       25
+        Total Cost:   $222.22
+```
