@@ -8,6 +8,7 @@
 5. [Restaurant Franchise System](https://github.com/jhuynh176/python_projects/tree/main/projects/restaurant_franchise_system)
 6. [Restaurant Table Handling System](https://github.com/jhuynh176/python_projects/tree/main/projects/restaurant_table_handling_system)
 7. [Robot Handling System](https://github.com/jhuynh176/python_projects/tree/main/projects/robot_handling_system)
+8. [Shipping Company System](https://github.com/jhuynh176/python_projects/tree/main/projects/shipping_company_system)
 
 ## Link to Games
 1. [Fortune Ball](https://github.com/jhuynh176/python_projects/blob/main/projects/fortune_ball/fortune_ball.py)
