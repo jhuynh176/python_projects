@@ -20,8 +20,9 @@
     - `assign_order` - assign ordered items to the table
 
 ## Output
-Table status
+- Table status
 ```
+SYSTEM:
 -----------------------------------
 Current table status:
 1 : {}
@@ -33,7 +34,7 @@ Current table status:
 7 : {}
 
 ```
-Assign table
+- Assign table
 ```
 -----------------------------------
 Customer: Jiho
@@ -50,6 +51,7 @@ Customer: Isa
 	Has entered table 3.
 	VIP = False.
 
+SYSTEM:
 -----------------------------------
 Current table status:
 1 : {'name': 'Jiho', 'vip_status': False, 'order': ''}
@@ -61,27 +63,47 @@ Current table status:
 7 : {}
 
 ```
-Assign ordered items
+- Assign ordered items
 ```
 -----------------------------------
 Table 2 has ordered items:
-	 Steak
-	 Seabass
-	 Wine Bottle
+Steak, Seabass, Wine Bottle
 Sending order to kitchen.
 
 -----------------------------------
 Table 1 has ordered items:
-	 Hamburgur
-	 Soda
-	 Soup
+Hamburgur, Soup, Soda
 Sending order to kitchen.
 
 -----------------------------------
+Table 3 has ordered items:
+Pancakes, Orange Juice, Apple Juice
+Sending order to kitchen.
+```
+- Order Status
+```
+SYSTEM:
+-----------------------------------
+Table 1 requests Order Status:
+         Food : Hamburgur, Soup
+         Drinks : Soda
+Items are being made.
+
+SYSTEM:
+-----------------------------------
+Table 3 requests Order Status:
+         Food : Pancakes
+         Drinks : Orange Juice, Apple Juice
+Items are being made.
+```
+- Current table status
+```
+SYSTEM:
+-----------------------------------
 Current table status:
-1 : {'name': 'Jiho', 'vip_status': False, 'order': ('Hamburgur', 'Soda', 'Soup')}
-2 : {'name': 'Arwa', 'vip_status': True, 'order': ('Steak', 'Seabass', 'Wine Bottle')}
-3 : {'name': 'Isa', 'vip_status': False, 'order': ''}
+1 : {'name': 'Jiho', 'vip_status': False, 'order': {'food': 'Hamburgur, Soup', 'drinks': 'Soda'}}
+2 : {'name': 'Arwa', 'vip_status': True, 'order': {'food': 'Steak, Seabass', 'drinks': 'Wine Bottle'}}
+3 : {'name': 'Isa', 'vip_status': False, 'order': {'food': 'Pancakes', 'drinks': 'Orange Juice, Apple Juice'}}
 4 : {}
 5 : {}
 6 : {}
