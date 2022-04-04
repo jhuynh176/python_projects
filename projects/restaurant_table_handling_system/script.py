@@ -18,7 +18,7 @@ def table_status():
 def assign_table(table_number, name, vip_status=False): 
   tables[table_number]['name'] = name
   tables[table_number]['vip_status'] = vip_status
-  tables[table_number]['order'] = ''
+  tables[table_number]['order'] = {}
 
   print(\
   "\n-----------------------------------"\
@@ -32,7 +32,7 @@ def assign_table(table_number, name, vip_status=False):
     ))
 
 # Write your code below: 
-def assign_and_print_order(table_number, *order_items):
+def assign_and_print_order(table_number, **order_items):
   tables[table_number]['order'] = order_items
 
   print(\
@@ -40,8 +40,8 @@ def assign_and_print_order(table_number, *order_items):
   "\nTable {table} has ordered items:"\
   .format(table = table_number))
 
-  for item in order_items:
-    print('\t', item)
+  for key, value in order_items.items():
+    print('\t', key, ':', value)
 
   print("Sending order to kitchen.")
 
@@ -54,8 +54,8 @@ assign_table(3, 'Isa', False)
 table_status()
 
 assign_and_print_order(2, 
-  'Steak', 'Seabass', 'Wine Bottle')
+  food = ['Steak', 'Seabass'], drink = ['Wine Bottle'])
 assign_and_print_order(1,
-  'Hamburgur', 'Soda', 'Soup')
+  food = ['Hamburgur', 'Soda', 'Soup'])
 
 table_status()
