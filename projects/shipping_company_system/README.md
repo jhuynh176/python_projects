@@ -45,7 +45,6 @@ OK! calculate_money_made() passes tests
 ```
 ```
 SYSTEM: Calculating driver cost
-400.0
 -------------------------------------
 Found FIRST driver:
         Driver:       Josh
@@ -53,7 +52,6 @@ Found FIRST driver:
         Salary:       10
         Total Cost:   $400.0
 
-228.57
 -------------------------------------
 Found CHEAPER driver:
         Driver:       Alex
@@ -61,7 +59,6 @@ Found CHEAPER driver:
         Salary:       20
         Total Cost:   $228.57
 
-222.22
 -------------------------------------
 Found CHEAPER driver:
         Driver:       Hector
