@@ -47,7 +47,7 @@ def assign_food_items(table_number, **order_items):
     print(\
     "\n-----------------------------------"\
     "\nTable {table} has ordered items:"\
-    "\n{food}, {drinks}"\
+    "\n\t{food}, {drinks}"\
     .format(
         table = table_number,
         food = food,

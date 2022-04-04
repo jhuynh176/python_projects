@@ -67,17 +67,17 @@ Current table status:
 ```
 -----------------------------------
 Table 2 has ordered items:
-Steak, Seabass, Wine Bottle
+         Steak, Seabass, Wine Bottle
 Sending order to kitchen.
 
 -----------------------------------
 Table 1 has ordered items:
-Hamburgur, Soup, Soda
+         Hamburgur, Soup, Soda
 Sending order to kitchen.
 
 -----------------------------------
 Table 3 has ordered items:
-Pancakes, Orange Juice, Apple Juice
+         Pancakes, Orange Juice, Apple Juice
 Sending order to kitchen.
 ```
 - Order Status
