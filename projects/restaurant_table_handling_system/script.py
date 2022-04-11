@@ -35,7 +35,6 @@ def assign_table(table_number, name, vip_status=False):
         status = vip_status
         ))
 
-# Write your code below: 
 def assign_food_items(table_number, **order_items):
     food = order_items['food']
     drinks = order_items['drinks']
